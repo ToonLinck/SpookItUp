@@ -20,4 +20,13 @@ public class Box : MonoBehaviour
     {
         
     }
+
+
+    public void SetPos( Vector2 vec)
+    {
+
+        gameObject.transform.position = vec;
+
+    }
+
 }
