@@ -7,7 +7,6 @@ public class Drop : MonoBehaviour
     bool dropped = false;
 
     public GameObject[] prefabs;
-    float dir = 0.1f;
     
     void Start()
     {

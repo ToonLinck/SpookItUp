@@ -54,9 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Box.cs" />
-    <Compile Include="Assets\Scripts\Drop.cs" />
-    <Compile Include="Assets\Scripts\Pumpkin.cs" />
     <Compile Include="Assets\Scripts\MoveScript.cs" />
+    <Compile Include="Assets\Scripts\Pumpkin.cs" />
+    <Compile Include="Assets\Scripts\Drop.cs" />
+    <Compile Include="Assets\Offscreen.cs" />
+    <Compile Include="Assets\Lives.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
