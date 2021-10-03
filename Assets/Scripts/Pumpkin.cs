@@ -7,12 +7,13 @@ public class Pumpkin : MonoBehaviour
     // Start is called before the first frame update
 
     Rigidbody2D rig;
-    BoxCollider2D coll;
+    CapsuleCollider2D coll;
+
 
     void Start()
     {
         rig = gameObject.GetComponent<Rigidbody2D>();
-        coll = gameObject.GetComponent<BoxCollider2D>();
+        coll = gameObject.GetComponent<CapsuleCollider2D>();
 
         rig.rotation = Random.Range(0, 90);
     }
@@ -20,6 +21,8 @@ public class Pumpkin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
 
     }
 

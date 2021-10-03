@@ -7,7 +7,7 @@ public class MoveScript : MonoBehaviour
 
     Rigidbody2D rig;
 
-    bool movable = false;
+    bool movable = true;
     float movespeed = 50f;
     float movex;
     

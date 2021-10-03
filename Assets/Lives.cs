@@ -6,17 +6,19 @@ public class Lives : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    int lives;
+    int lives = 3;
+    Animator skelAnim;
+
 
     void Start()
     {
-        
+        skelAnim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        skelAnim.SetInteger("Lives", lives);
     }
 
     public void LivesDown()

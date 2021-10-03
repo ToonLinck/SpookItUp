@@ -22,7 +22,7 @@ public class Offscreen : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        //controller.lifesDown;
+        controller.GetComponent<Lives>().LivesDown();
         Destroy(collision.gameObject);
 
 

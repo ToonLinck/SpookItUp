@@ -28,6 +28,8 @@ public class Drop : MonoBehaviour
     {
         GameObject prefab = Instantiate(prefabs[Random.Range(0,prefabs.Length)]);
         prefab.GetComponent<MoveScript>().SetPos(gameObject.transform.position);
+
+
         StartCoroutine(MoveSet(prefab));
 
     }
@@ -49,6 +51,10 @@ public class Drop : MonoBehaviour
     {
         pref.GetComponent<MoveScript>().SetMovable(true);
         yield return new WaitForSeconds(3);
+
+
+
+            
         pref.GetComponent<MoveScript>().SetMovable(false);
 
     }
