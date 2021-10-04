@@ -37,7 +37,7 @@ public class Lives : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 0;
+            
             if (points > PlayerPrefs.GetInt("Highscore",0))
             {
                 PlayerPrefs.SetInt("Highscore",points);
