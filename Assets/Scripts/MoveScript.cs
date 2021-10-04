@@ -8,7 +8,7 @@ public class MoveScript : MonoBehaviour
     Rigidbody2D rig;
 
     bool movable = true;
-    float movespeed = 50f;
+    float movespeed = 10f;
     float movex;
     
     void Start()

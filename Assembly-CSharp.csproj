@@ -54,16 +54,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Box.cs" />
+    <Compile Include="Assets\highscore.cs" />
     <Compile Include="Assets\Scripts\MoveScript.cs" />
+    <Compile Include="Assets\QuitButtton.cs" />
     <Compile Include="Assets\Scripts\CandyCorn.cs" />
+    <Compile Include="Assets\points.cs" />
     <Compile Include="Assets\Scripts\Pumpkin.cs" />
     <Compile Include="Assets\Scripts\Offscreen.cs" />
     <Compile Include="Assets\Scripts\Drop.cs" />
-    <Compile Include="Assets\Scripts\Lives.cs" />
-    <Compile Include="Assets\points.cs" />
-    <Compile Include="Assets\highscore.cs" />
     <Compile Include="Assets\AgainButton.cs" />
-    <Compile Include="Assets\QuitButtton.cs" />
+    <Compile Include="Assets\Scripts\Lives.cs" />
+    <Compile Include="Assets\YoutubeLink.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
