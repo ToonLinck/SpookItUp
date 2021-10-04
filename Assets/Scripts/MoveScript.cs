@@ -14,7 +14,6 @@ public class MoveScript : MonoBehaviour
     void Start()
     {
         rig = gameObject.GetComponent<Rigidbody2D>();
-        rig.rotation = Random.Range(0, 360);
     }
 
     
@@ -29,11 +28,15 @@ public class MoveScript : MonoBehaviour
         {
             rig.gravityScale = 1;
         }
+        if (gameObject.transform.position.x < -5.5f) { gameObject.transform.position = new Vector2(-5.5f, gameObject.transform.position.y); }
+        if (gameObject.transform.position.x > 5.5f) { gameObject.transform.position = new Vector2(5.5f, gameObject.transform.position.y); }
     }
 
 
     private void FixedUpdate()
     {
+        
+
         gameObject.transform.position = new Vector2(gameObject.transform.position.x + movex, gameObject.transform.position.y);
         movex = 0;
     }
@@ -50,6 +53,16 @@ public class MoveScript : MonoBehaviour
 
         gameObject.transform.position = vec;
 
+    }
+
+    public float GetRotation()
+    {
+        return rig.rotation;
+    }
+
+    public void SetRotation(float rot)
+    {
+        rig.rotation = rot;
     }
 
 }

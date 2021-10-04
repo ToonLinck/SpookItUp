@@ -14,8 +14,6 @@ public class Pumpkin : MonoBehaviour
     {
         rig = gameObject.GetComponent<Rigidbody2D>();
         coll = gameObject.GetComponent<CapsuleCollider2D>();
-
-        rig.rotation = Random.Range(0, 90);
     }
 
     // Update is called once per frame
